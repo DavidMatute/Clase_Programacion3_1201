@@ -44,6 +44,10 @@ namespace Clase_Programacion3_1201
             //    listBox_Paises.Items.Add((i+1)+")." + " " + paises[i]);
             //}
 
+            //ordenarlos alfabeticamente
+            //paises = paises.OrderBy(c => c).ToArray();
+            //paises = paises.OrderByDescending(c => c).ToArray();
+
             //Mostrar el arreglo
             foreach (var item in paises)
             {
