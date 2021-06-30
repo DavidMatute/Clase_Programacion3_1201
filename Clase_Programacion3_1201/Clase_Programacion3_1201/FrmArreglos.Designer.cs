@@ -31,6 +31,10 @@
             this.listBox_Arreglo = new System.Windows.Forms.ListBox();
             this.btn_Ejecutar = new System.Windows.Forms.Button();
             this.listBox_Paises = new System.Windows.Forms.ListBox();
+            this.listBox_Ordenar = new System.Windows.Forms.ListBox();
+            this.btn_Ordenar = new System.Windows.Forms.Button();
+            this.btn_MaxMin = new System.Windows.Forms.Button();
+            this.listBox_MaxMin = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // listBox_Arreglo
@@ -55,16 +59,56 @@
             // listBox_Paises
             // 
             this.listBox_Paises.FormattingEnabled = true;
-            this.listBox_Paises.Location = new System.Drawing.Point(158, 200);
+            this.listBox_Paises.Location = new System.Drawing.Point(171, 200);
             this.listBox_Paises.Name = "listBox_Paises";
             this.listBox_Paises.Size = new System.Drawing.Size(160, 147);
             this.listBox_Paises.TabIndex = 2;
+            // 
+            // listBox_Ordenar
+            // 
+            this.listBox_Ordenar.FormattingEnabled = true;
+            this.listBox_Ordenar.Location = new System.Drawing.Point(369, 200);
+            this.listBox_Ordenar.Name = "listBox_Ordenar";
+            this.listBox_Ordenar.Size = new System.Drawing.Size(155, 147);
+            this.listBox_Ordenar.TabIndex = 3;
+            // 
+            // btn_Ordenar
+            // 
+            this.btn_Ordenar.Location = new System.Drawing.Point(369, 61);
+            this.btn_Ordenar.Name = "btn_Ordenar";
+            this.btn_Ordenar.Size = new System.Drawing.Size(95, 64);
+            this.btn_Ordenar.TabIndex = 4;
+            this.btn_Ordenar.Text = "Ordenar";
+            this.btn_Ordenar.UseVisualStyleBackColor = true;
+            this.btn_Ordenar.Click += new System.EventHandler(this.btn_Ordenar_Click);
+            // 
+            // btn_MaxMin
+            // 
+            this.btn_MaxMin.Location = new System.Drawing.Point(557, 61);
+            this.btn_MaxMin.Name = "btn_MaxMin";
+            this.btn_MaxMin.Size = new System.Drawing.Size(126, 64);
+            this.btn_MaxMin.TabIndex = 5;
+            this.btn_MaxMin.Text = "Maximo o MInimo";
+            this.btn_MaxMin.UseVisualStyleBackColor = true;
+            this.btn_MaxMin.Click += new System.EventHandler(this.btn_MaxMin_Click);
+            // 
+            // listBox_MaxMin
+            // 
+            this.listBox_MaxMin.FormattingEnabled = true;
+            this.listBox_MaxMin.Location = new System.Drawing.Point(557, 200);
+            this.listBox_MaxMin.Name = "listBox_MaxMin";
+            this.listBox_MaxMin.Size = new System.Drawing.Size(128, 147);
+            this.listBox_MaxMin.TabIndex = 6;
             // 
             // FrmArreglos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listBox_MaxMin);
+            this.Controls.Add(this.btn_MaxMin);
+            this.Controls.Add(this.btn_Ordenar);
+            this.Controls.Add(this.listBox_Ordenar);
             this.Controls.Add(this.listBox_Paises);
             this.Controls.Add(this.btn_Ejecutar);
             this.Controls.Add(this.listBox_Arreglo);
@@ -79,6 +123,10 @@
         private System.Windows.Forms.ListBox listBox_Arreglo;
         private System.Windows.Forms.Button btn_Ejecutar;
         private System.Windows.Forms.ListBox listBox_Paises;
+        private System.Windows.Forms.ListBox listBox_Ordenar;
+        private System.Windows.Forms.Button btn_Ordenar;
+        private System.Windows.Forms.Button btn_MaxMin;
+        private System.Windows.Forms.ListBox listBox_MaxMin;
     }
 }
 
